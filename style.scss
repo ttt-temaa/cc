@@ -1,0 +1,411 @@
+@import 'vars';
+@import 'catalog';
+@import 'corzina';
+@import 'filter-catalog';
+@import 'media';
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    background-image: url(img/topback.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 735px;
+
+    &__content {
+        padding-bottom: 400px;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        color: $color-text;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+        font-weight: 400;
+    }
+}
+
+.header {
+    height: 76px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid $color-text;
+
+    &__input {
+        border: 1px solid $color-text;
+        width: 288px;
+        height: 41px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        outline: none;
+        background-color: transparent;
+        margin: 0 10px;
+        color: $color-text;
+        font-size: 16px;
+        line-height: 18px;
+        padding-left: 32px;
+        padding-right: 32px;
+
+        &::placeholder {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            color: $color-text;
+        }
+    }
+}
+
+.logo {
+    color: $color-text;
+}
+
+.nav {
+    display: flex;
+    gap: 32px;
+
+    &__link {
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        color: $color-text;
+        font-weight: 400;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.title {
+    color: $color-text;
+    font-size: 64px;
+    line-height: 70px;
+    margin-top: 63px;
+    margin-bottom: 16px;
+    max-width: 792px;
+    font-weight: 600;
+}
+
+.link {
+    color: $color-text;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    font-weight: 400;
+}
+
+.for-box {
+    &__title {
+        font-size: 48px;
+        line-height: 59px;
+        color: #000000;
+        padding-top: 44px;
+        margin-top: 20px;
+        margin-bottom: 32px;
+        font-weight: 600;
+    }
+}
+
+.for {
+    &__content {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    &__item {
+        height: 415px;
+        grid-column: span 4;
+        color: $color-text;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.for__item_big {
+            grid-column: span 6;
+        }
+
+        &.for__item_1 {
+            background-image: url(img/ОТДЫХА.jpeg);
+        }
+
+        &.for__item_2 {
+            background-image: url(img/РАБОТЫ.jpeg);
+        }
+
+        &.for__item_3 {
+            background-image: url(img/КУХНИ.jpeg);
+        }
+
+        &.for__item_4 {
+            background-image: url(img/ДЕТСКОЙ.jpeg);
+        }
+
+        &.for__item_5 {
+            background-image: url(img/ВАННОЙ.jpeg);
+        }
+    }
+}
+
+.product-box {
+    padding-top: 64px;
+
+    &__title {
+        font-size: 48px;
+        line-height: 59px;
+        color: #000000;
+        margin-bottom: 32px;
+        font-weight: 600;
+    }
+}
+
+.product-content {
+    display: flex;
+    column-gap: 32px;
+    row-gap: 56px;
+    flex-wrap: wrap;
+}
+
+.article {
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 9px;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+
+    &__price {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__paragraph {
+        font-size: 24px;
+        line-height: 29px;
+        color: #050505;
+        font-weight: 500;
+
+        &_type-a {
+            font-size: 14px;
+            line-height: 17px;
+            color: #888888;
+            margin-bottom: 12px;
+        }
+
+        &_type-b {
+            font-size: 24px;
+            line-height: 29px;
+            text-decoration-line: line-through;
+            color: #888888;
+        }
+    }
+}
+
+.link__box {
+    color: #737373;
+    padding-bottom: 34px;
+    margin-bottom: 33px;
+    margin-top: 39px;
+
+    &_catalog {
+        color: #000000;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        font-weight: 400;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+    background-color: #F7F6F6;
+    padding-top: 32px;
+
+    &__inter {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    &__contents {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        display: flex;
+        align-self: baseline;
+        margin-top: 29px;
+        padding-left: 25px;
+        padding-right: 42px;
+    }
+
+    &__info {
+        width: 423px;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-wrap: wrap;
+        padding-right: 40px;
+    }
+
+    &__nav {
+        width: 136px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        box-sizing: border-box;
+        padding-left: 14px;
+        padding-right: 63px;
+    }
+
+    &__item {
+        width: 177px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 35px;
+    }
+
+    &__icons {
+        width: 137px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+        padding-bottom: 12px;
+        padding-right: 40px;
+        box-sizing: border-box;
+    }
+
+    &__title_menu {
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        font-weight: 500;
+    }
+
+    &__link_underline {
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-top: 12px;
+        font-weight: 500;
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        text-decoration: none;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 353px;
+        align-items: center;
+        gap: 8px;
+        box-sizing: border-box;
+        padding-left: 56px;
+        padding-top: 17px;
+        padding-bottom: 40px;
+    }
+}
+
+.form {
+    &__paragraph {
+        font-size: 12px;
+        line-height: 15px;
+        color: $color-text-2;
+        padding-right: 9px;
+    }
+
+    &__input {
+        width: 260px;
+        height: 40px;
+        outline: none;
+        border: 1px solid #C4C4C4;
+        background-color: $color-text;
+        box-sizing: border-box;
+        border-radius: 16px;
+        font-size: 12px;
+        line-height: 15px;
+        color: gray;
+        padding-left: 17px;
+        padding-right: 17px;
+
+        &::placeholder {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            color: gray;
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+
+    &__button {
+        background: rgba(222, 215, 215, 0.41);
+        border: 1px solid rgba(222, 215, 215, 0.41);
+        box-sizing: border-box;
+        border-radius: 16px;
+        width: 260px;
+        height: 40px;
+        line-height: 18px;
+        color: #000000;
+        font: inherit;
+        font-size: 12px;
+    }
+}

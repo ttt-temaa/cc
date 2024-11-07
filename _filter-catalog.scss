@@ -1,0 +1,317 @@
+@import 'vars';
+
+.container {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: flex-end;
+}
+
+.filter-button-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    border: 1px solid $color-text-2;
+    border-radius: 20px;
+    min-height: 40px;
+    font: inherit;
+    padding: 10px 23px;
+    cursor: pointer;
+    background-color: $color-text;
+}
+
+.filter-button {
+    font-weight: 500;
+    text-align: start;
+    max-width: 182px;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 20px;
+    position: relative;
+    background-image: url(img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    padding-right: 22px;
+}
+
+.filtering-form {
+    position: absolute;
+    top: calc(100% + 14px);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 36px;
+    background-color: $color-text;
+    box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+    padding: 40px 48px;
+    right: 260px;
+
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 32px 65px;
+        max-height: 548px;
+        min-width: 548px;
+    }
+
+    &__fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+        border: none;
+
+        &-type {
+            padding-right: 40px;
+        }
+    }
+
+    &__legend {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+
+    &__button {
+        align-self: flex-end;
+        max-width: 190px;
+        width: 100%;
+    }
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        padding-left: 30px;
+        font-size: 14px;
+
+        &::before {
+            content: '';
+            width: 14px;
+            height: 14px;
+            border: 1px solid #888888;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            background-color: $color-text;
+        }
+    }
+
+    &__input {
+        display: none;
+
+        &:checked + .radio__label::before {
+            background-image: url(img/chek.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            border-color: $color-text-2;
+        }
+    }
+}
+
+.range {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    &__label {
+        font-size: 14px;
+    }
+
+    &__slider {
+        font-family: sans-serif;
+        font-size: 14px;
+        position: relative;
+        height: 20px;
+        width: 210px;
+        display: inline-block;
+        margin-top: -5px;
+
+        input {
+            position: absolute;
+        }
+    }
+
+    &__input {
+        width: 190px;
+        height: 10px;
+        overflow: hidden;
+        outline: none;
+
+        &,
+        &::-webkit-slider-runnable-track,
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background: none;
+        }
+
+        &::-webkit-slider-runnable-track {
+            width: 200px;
+            height: 1px;
+            background: $color-text-2;
+        }
+
+        &:nth-child(2)::-webkit-slider-runnable-track {
+            background: none;
+        }
+
+        &::-webkit-slider-thumb {
+            position: relative;
+            height: 8px;
+            width: 8px;
+            margin-top: -4px;
+            background: $color-text-2;
+            border: 1px solid $color-text-2;
+            border-radius: 25px;
+            cursor: pointer;
+            z-index: 1;
+
+            &:active {
+                cursor: grabbing;
+            }
+
+            &:nth-child(1) {
+                z-index: 2;
+            }
+        }
+    }
+}
+
+.color-options {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 190px;
+    gap: 14px;
+
+    &__checkbox {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__input {
+        display: none;
+    }
+
+    &__lable {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        padding-left: 30px;
+        font-size: 14px;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 1px solid #888888;
+            position: absolute;
+            left: 0;
+            background-color: $color-text;
+        }
+    }
+
+    &__input:checked + &__lable::before {
+        background-image: url(img/chek.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-color: $color-text-2;
+    }
+
+    &__lable-white::before {
+        background-color: $color-text;
+        border-color: #808080;
+    }
+
+    &__lable-black::before {
+        background-color: $color-text-2;
+        border-color: $color-text-2;
+    }
+
+    &__lable-grey::before {
+        background-color: #737373;
+        border-color: #737373;
+    }
+
+    &__lable-red::before {
+        background-color: red;
+        border-color: red;
+    }
+
+    &__lable-orange::before {
+        background-color: #ff4500;
+        border-color: #ff4500;
+    }
+
+    &__lable-yellow::before {
+        background-color: #ff0;
+        border-color: #ff0;
+    }
+
+    &__lable-green::before {
+        background-color: #008000;
+        border-color: #008000;
+    }
+
+    &__lable-turquoise::before {
+        background-color: turquoise;
+        border-color: turquoise;
+    }
+
+    &__lable-lightblue::before {
+        background-color: lightblue;
+        border-color: lightblue;
+    }
+
+    &__lable-blue::before {
+        background-color: blue;
+        border-color: blue;
+    }
+
+    &__lable-purple::before {
+        background-color: #800080;
+        border-color: #800080;
+    }
+
+    &__lable-violet::before {
+        background-color: #8a2be2;
+        border-color: #8a2be2;
+    }
+
+    &__lable-lavender::before {
+        background-color: #d89aff;
+        border-color: #d89aff;
+    }
+
+    &__lable-pink::before {
+        background-color: #ff1493;
+        border-color: #ff1493;
+    }
+
+    &__input:checked + &__lable-black::before,
+    &__input:checked + &__lable-blue::before,
+    &__input:checked + &__lable-purple::before {
+        background-image: url(img/chekwhite.svg);
+    }
+}
