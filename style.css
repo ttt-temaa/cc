@@ -606,54 +606,101 @@ select {
 
 @media (max-width: 1024px) {
   .center {
-    padding-left: calc(50% - 393px);
-    padding-right: calc(50% - 393px);
+    padding-left: 5%;
+    padding-right: 5%;
   }
-  .for__item {
-    height: 287px;
+  .top {
+    height: 500px;
   }
-  .product-content {
-    column-gap: 29px;
-    row-gap: 39px;
+  .top__content {
+    padding-bottom: 200px;
+    margin-bottom: 30px;
   }
-  .footer__logo {
-    display: none;
+  .top__text {
+    font-size: 20px;
+    line-height: 28px;
   }
-  .catalog__product-box {
-    column-gap: 29px;
-    row-gap: 37px;
+  .header__input {
+    width: 200px;
   }
-  .filtering-form {
-    position: absolute;
-    top: calc(100% + 14px);
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 36px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 67px -12px rgba(0, 0, 0, 0.32);
-    padding: 40px 48px;
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .for-box__title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .for__content {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+  }
+  .footer {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
-@media (min-width: 768px) and (max-width: 833px) {
+@media (max-width: 768px) {
   .center {
-    padding-left: calc(50% - 393px);
-    padding-right: calc(50% - 393px);
+    padding-left: 2%;
+    padding-right: 2%;
   }
-  .article {
-    width: 345px;
+  .top {
+    height: 300px;
+  }
+  .top__content {
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+  }
+  .top__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+  .header__input {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .for__content {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
   .for__item {
-    height: 415px;
-    grid-column: span 4;
-    color: rgb(255, 255, 255);
-    font-size: 34px;
-    font-weight: 600;
-    line-height: 41px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .product-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer {
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .footer__form {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer__item,
+  .footer__info,
+  .footer__nav {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 8px;
   }
 }
 * {
