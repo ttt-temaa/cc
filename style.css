@@ -644,25 +644,16 @@ select {
   .article {
     width: 345px;
   }
-  .for__item_1 {
-    width: 378px;
-    height: 268px;
-  }
-  .for__item_2 {
-    width: 378px;
-    height: 268px;
-  }
-  .for__item_3 {
-    width: 242px;
-    height: 265px;
-  }
-  .for__item_4 {
-    width: 242px;
-    height: 265px;
-  }
-  .for__item_5 {
-    width: 242px;
-    height: 265px;
+  .for__item {
+    height: 415px;
+    grid-column: span 4;
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 * {
