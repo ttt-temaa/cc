@@ -159,7 +159,6 @@ select {
   height: 173px;
 }
 .basket__input {
-  font-family: inherit;
   border: none;
   width: 71px;
   height: 51px;
@@ -250,6 +249,7 @@ select {
   line-height: 17px;
   text-align: center;
   font-family: inherit;
+  transition: background 0.3s ease, color 0.2s ease;
 }
 .nav-basket__link:hover {
   background: rgb(0, 0, 0);
@@ -315,6 +315,7 @@ select {
   background: rgb(247, 246, 246);
   margin-left: 45px;
   font-family: inherit;
+  transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
 }
 .basket-form__button:hover {
   background: rgb(0, 0, 0);
@@ -325,7 +326,7 @@ select {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   text-align: center;
   text-decoration-line: none;
 }
@@ -1034,6 +1035,7 @@ body {
   color: #000000;
   font: inherit;
   font-size: 12px;
+  transition: background 0.2s ease, border 0.2s ease, color 0.2s ease;
 }
 .form__button:hover {
   background: rgb(0, 0, 0);

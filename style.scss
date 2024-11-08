@@ -324,11 +324,11 @@ body {
         box-sizing: border-box;
 
         a img {
-            transition: filter 0.3s ease; // плавное изменение
+            transition: filter 0.3s ease;
         }
 
         a:hover img {
-            filter: brightness(0); // делает изображение черным
+            filter: brightness(0);
         }
     }
 
@@ -422,6 +422,7 @@ body {
         color: #000000;
         font: inherit;
         font-size: 12px;
+        transition: background 0.2s ease, border 0.2s ease, color 0.2s ease;
 
         &:hover {
             background: rgba(0, 0, 0);

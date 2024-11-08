@@ -48,13 +48,12 @@
     }    
 
     &__input {
-        font-family: inherit;        
         border: none;        
         width: 71px;        
         height: 51px;        
         border-radius: 6px;        
-        background: rgb(247, 246, 246);        
-        font-family: Poppins;        
+        background: rgb(247, 246, 246);
+        font-family: Poppins;
         font-size: 14px;        
         font-weight: 600;        
         line-height: 210%;        
@@ -152,6 +151,7 @@
         line-height: 17px;
         text-align: center;
         font-family: inherit;
+        transition: background 0.3s ease, color 0.2s ease;
 
         &:hover {
             background: rgba(0, 0, 0);
@@ -225,6 +225,7 @@
         background: rgb(247, 246, 246);
         margin-left: 45px;
         font-family: inherit;
+        transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
 
         &:hover {
             background: rgba(0, 0, 0);
@@ -237,7 +238,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 20px;
-        letter-spacing: 0px;
+        letter-spacing: 0;
         text-align: center;
         text-decoration-line: none;
     }
