@@ -243,6 +243,11 @@ body {
         line-height: 24px;
         text-decoration-line: underline;
         font-weight: 400;
+
+        &:hover {
+            color: #737373;
+            text-decoration-line: none;
+        }
     }
 }
 
@@ -317,7 +322,17 @@ body {
         padding-bottom: 12px;
         padding-right: 40px;
         box-sizing: border-box;
+
+        a img {
+            transition: filter 0.3s ease; // плавное изменение
+        }
+
+        a:hover img {
+            filter: brightness(0); // делает изображение черным
+        }
     }
+
+
 
     &__title_menu {
         font-size: 24px;
@@ -407,5 +422,29 @@ body {
         color: #000000;
         font: inherit;
         font-size: 12px;
+
+        &:hover {
+            background: rgba(0, 0, 0);
+            border: 1px solid rgba(0, 0, 0);
+            color: white;
+        }
     }
+
+
+}
+
+.filtering-form-container {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    width: 450px;
+}
+
+.ctl-nav__filter:hover .filtering-form-container {
+    display: block;
+}
+
+.ctl-nav__filter {
+    position: relative;
 }

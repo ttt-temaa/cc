@@ -229,6 +229,7 @@ select {
   margin-top: 25px;
 }
 .nav-basket__button {
+  color: rgb(0, 0, 0);
   font-family: Montserrat;
   width: 200px;
   height: 37px;
@@ -237,14 +238,23 @@ select {
   border-radius: 50px;
   background: rgb(255, 255, 255);
 }
+.nav-basket__button:hover {
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  color: white;
+}
 .nav-basket__link {
   text-decoration-line: none;
-  color: rgb(0, 0, 0);
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
   text-align: center;
   font-family: inherit;
+}
+.nav-basket__link:hover {
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  color: white;
 }
 
 .basket-form {
@@ -296,6 +306,7 @@ select {
   padding-bottom: 18px;
 }
 .basket-form__button {
+  color: rgb(0, 0, 0);
   box-sizing: border-box;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 20px;
@@ -305,6 +316,11 @@ select {
   margin-left: 45px;
   font-family: inherit;
 }
+.basket-form__button:hover {
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  color: white;
+}
 .basket-form__link {
   font-size: 16px;
   font-weight: 400;
@@ -312,7 +328,6 @@ select {
   letter-spacing: 0px;
   text-align: center;
   text-decoration-line: none;
-  color: rgb(0, 0, 0);
 }
 
 .container {
@@ -361,7 +376,7 @@ select {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 36px;
+  gap: 42px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
   padding: 40px 48px;
@@ -864,6 +879,10 @@ body {
   text-decoration-line: underline;
   font-weight: 400;
 }
+.link__box_catalog:hover {
+  color: #737373;
+  text-decoration-line: none;
+}
 
 .footer {
   display: flex;
@@ -930,6 +949,12 @@ body {
   padding-bottom: 12px;
   padding-right: 40px;
   box-sizing: border-box;
+}
+.footer__icons a img {
+  transition: filter 0.3s ease;
+}
+.footer__icons a:hover img {
+  filter: brightness(0);
 }
 .footer__title_menu {
   font-size: 24px;
@@ -1009,6 +1034,27 @@ body {
   color: #000000;
   font: inherit;
   font-size: 12px;
+}
+.form__button:hover {
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  color: white;
+}
+
+.filtering-form-container {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 100;
+  width: 450px;
+}
+
+.ctl-nav__filter:hover .filtering-form-container {
+  display: block;
+}
+
+.ctl-nav__filter {
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
