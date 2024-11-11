@@ -339,12 +339,17 @@ select {
   color: white;
 }
 .basket-form__link {
+  display: flex;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0;
   text-align: center;
   text-decoration-line: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {

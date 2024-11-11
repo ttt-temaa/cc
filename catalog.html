@@ -248,7 +248,8 @@
                             </div>
 
                             <div class="checkbox">
-                                <input class="checkbox__input" type="checkbox" name="room-type" id="light" value="light">
+                                <input class="checkbox__input" type="checkbox" name="room-type" id="light"
+                                       value="light">
                                 <label class="checkbox__lable" for="light">Свет</label>
                             </div>
 
@@ -414,12 +415,12 @@
     </div>
 </footer>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         const toggleButton = document.getElementById("Фильтрация");
         const filterContainer = document.querySelector(".filtering-form-container");
 
         if (toggleButton && filterContainer) {
-            toggleButton.addEventListener("click", function() {
+            toggleButton.addEventListener("click", function () {
                 filterContainer.style.display = filterContainer.style.display === "none" ? "block" : "none";
             });
         }
