@@ -2,7 +2,7 @@
 @import 'catalog';
 @import 'corzina';
 @import 'filter-catalog';
-@import 'media';
+
 
 
 * {
@@ -261,6 +261,7 @@ body {
   padding-top: 32px;
 
   &__inter {
+    margin-top: 20px;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
@@ -450,4 +451,4 @@ body {
   position: relative;
 }
 
-
+@import 'media';

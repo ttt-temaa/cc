@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Корзина</title>
@@ -76,11 +76,11 @@
         </div>
 
         <nav class="nav-basket">
-            <button href="catalog.html" class="nav-basket__button">
-                <a class="nav-basket__link">Очистить корзину</a>
+            <button class="nav-basket__button">
+                <span class="nav-basket__link">Очистить корзину</span>
             </button>
-            <button href="catalog.html" class="nav-basket__button">
-                <a class="nav-basket__link">Продолжить покупки</a>
+            <button class="nav-basket__button">
+                <span class="nav-basket__link">Продолжить покупки</span>
             </button>
         </nav>
 
@@ -99,21 +99,22 @@
                 <input class="basket-form__input" type="text" placeholder="Адрес доставки">
             </label>
         </div>
-        <p class="basket-form__finalprace">Итого: 128 000 руб.</p>
-        <button href="corzina.html" class="basket-form__button">
-            <a class="basket-form__link">Оформить заказ</a>
-        </button>
+        <div class="basket-form__all-price">
+            <p class="basket-form__all-price__final-price">Итого: </p>
+            <p class="basket-form__all-price__price">128 000 руб.</p>
+        </div>
+
+        <a href="corzina.html" class="basket-form__button basket-form__link">Оформить заказ</a>
     </div>
 
 </div>
 
 <section class="product-box center">
-
     <h2 class="product-box__title">Специальные предложения</h2>
 
     <div class="product-content">
         <article class="article">
-            <img class="article__img" src="img/TATRAN 2.jpeg" alt="Кровать TATRAN">
+            <img class="article__img" src="img/TATRAN_2.jpeg" alt="Кровать TATRAN">
             <h3 class="article__title">Кровать TATRAN</h3>
             <p class="article__paragraph_type-a">Основание из полированной нержавеющей стали, придает оригинальный
                 парящий эффект.</p>
@@ -135,7 +136,7 @@
         </article>
 
         <article class="article">
-            <img class="article__img" src="img/MENU 2.jpeg" alt="Стол MENU">
+            <img class="article__img" src="img/MENU_2.jpeg" alt="Стол MENU">
             <h3 class="article__title">Стол MENU</h3>
             <p class="article__paragraph_type-a">Европейский дуб - отличается особой прочностью и стабильностью.</p>
             <div class="article__price">
@@ -147,12 +148,13 @@
 </section>
 
 <section class="link__box center">
+    <h2 class="visually-hidden">Навигация</h2>
     <a class="link__box_catalog" href="catalog.html">Перейти в каталог</a>
 </section>
 
 <footer class="footer center">
     <div class="footer__inter">
-        <a href="index.html"><img src="img/logo1.svg" alt="Логотип магазина\"></a>
+        <a href="index.html"><img src="img/logo1.svg" alt="Логотип магазина"></a>
     </div>
     <div class="footer__contents">
 

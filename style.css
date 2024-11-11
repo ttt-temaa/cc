@@ -288,6 +288,7 @@ select {
   line-height: 17px;
   text-align: left;
   font-family: inherit;
+  outline: none;
 }
 .basket-form__input::placeholder {
   border: rgb(247, 246, 246);
@@ -297,7 +298,22 @@ select {
   line-height: 17px;
   text-align: left;
 }
-.basket-form__finalprace {
+.basket-form__all-price {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.basket-form__all-price__final-price {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+  padding-top: 64.5px;
+  padding-bottom: 18px;
+}
+.basket-form__all-price__price {
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
@@ -604,105 +620,6 @@ select {
   background-image: url(img/chekwhite.svg);
 }
 
-@media (max-width: 1024px) {
-  .center {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .top {
-    height: 500px;
-  }
-  .top__content {
-    padding-bottom: 200px;
-    margin-bottom: 30px;
-  }
-  .top__text {
-    font-size: 20px;
-    line-height: 28px;
-  }
-  .header__input {
-    width: 200px;
-  }
-  .title {
-    font-size: 48px;
-    line-height: 56px;
-  }
-  .for-box__title {
-    font-size: 36px;
-    line-height: 46px;
-  }
-  .for__content {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 16px;
-  }
-  .footer {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-@media (max-width: 768px) {
-  .center {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-  .top {
-    height: 300px;
-  }
-  .top__content {
-    padding-bottom: 100px;
-    margin-bottom: 20px;
-  }
-  .top__text {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .header {
-    flex-direction: column;
-    height: auto;
-  }
-  .header__input {
-    width: 100%;
-    margin: 5px 0;
-  }
-  .nav {
-    flex-direction: column;
-    gap: 16px;
-  }
-  .title {
-    font-size: 32px;
-    line-height: 36px;
-  }
-  .for__content {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-  .for__item {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .product-content {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .footer {
-    flex-direction: column;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-  .footer__form {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .footer__item,
-  .footer__info,
-  .footer__nav {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    gap: 8px;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -933,6 +850,7 @@ body {
   padding-top: 32px;
 }
 .footer__inter {
+  margin-top: 20px;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -1096,6 +1014,106 @@ body {
 
 .ctl-nav__filter {
   position: relative;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .top {
+    height: 500px;
+  }
+  .top__content {
+    padding-bottom: 200px;
+    margin-bottom: 30px;
+  }
+  .top__text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .header__input {
+    width: 200px;
+  }
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .for-box__title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .for__content {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+  }
+  .footer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .center {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .top {
+    height: 300px;
+  }
+  .top__content {
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+  }
+  .top__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+  .header__input {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .for__content {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .for__item {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .product-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer {
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .footer__form {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer__item,
+  .footer__info,
+  .footer__nav {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 8px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

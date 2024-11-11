@@ -195,6 +195,7 @@
     line-height: 17px;
     text-align: left;
     font-family: inherit;
+    outline: none;
   }
 
   &__input::placeholder {
@@ -206,14 +207,32 @@
     text-align: left;
   }
 
-  &__finalprace {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29px;
-    text-align: center;
-    padding-top: 64.5px;
-    padding-bottom: 18px;
+  &__all-price {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    &__final-price {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29px;
+      text-align: center;
+      padding-top: 64.5px;
+      padding-bottom: 18px;
+    }
+
+    &__price {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      text-align: center;
+      padding-top: 64.5px;
+      padding-bottom: 18px;
+    }
   }
+
 
   &__button {
     color: $color-text-2;
