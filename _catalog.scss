@@ -1,5 +1,5 @@
 
-.catalog__top {
+.catalog-top {
   background-image: url(img/c.topback.jpeg);
   background-repeat: no-repeat;
   background-position: center;
@@ -7,27 +7,26 @@
   height: 400px;
 }
 
-.title__catalog {
+.title-catalog {
   padding-top: 64px;
 }
 
-.section__catalog_nav {
 
-}
-
-.nav__catalog-nav {
-  display: flex;
-  gap: 10px;
-}
-
-.nav__catalog {
+.nav-catalog {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav__nav_catalog {
+
+.nav-catalog__pages {
+  display: flex;
+  gap: 10px;
+}
+
+
+.pages-catalog {
   color: $color-text-2;
   font-size: 16px;
   font-weight: 400;
@@ -39,24 +38,24 @@
   margin-bottom: 41px;
 }
 
-.nav__nav_catalog:hover {
+.nav-catalog__pages:hover {
   text-decoration: underline;
   color: $color-text-2;
 }
 
-.nav__glav {
+.pages-main {
   width: 66px;
 }
 
-.nav__slesh {
+.pages-slesh {
   width: 6px;
 }
 
-.nav__catalog-item {
+.pages-catalog-nav {
   width: 137px;
 }
 
-.ctl-nav__filter {
+.nav-filter {
   display: flex;
   column-gap: 10px;
   margin-top: 61px;
@@ -72,7 +71,7 @@ select {
   border-radius: 3px;
 }
 
-.nav__filter {
+.nav-filter__section {
   height: 40px;
   box-sizing: border-box;
   border: 1px solid gray;
@@ -84,7 +83,7 @@ select {
   padding-right: 22px;
 }
 
-.nav__filter_filter {
+.nav-filter__block {
   font-family: Montserrat;
   width: 182px;
   font-size: 16px;
@@ -98,7 +97,7 @@ select {
   padding-left: 23px;
 }
 
-.nav__filter_popular {
+.nav-filter__popular {
   font-family: Montserrat;
   width: 227px;
   font-size: 16px;
@@ -112,7 +111,7 @@ select {
   padding-left: 23px;
 }
 
-.catalog__product-box {
+.catalog-product {
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;

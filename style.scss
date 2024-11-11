@@ -123,45 +123,48 @@ body {
 }
 
 .for {
-  &__content {
+
+  &-content {
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
-  }
 
-  &__item {
-    height: 415px;
-    grid-column: span 4;
-    color: $color-text;
-    font-size: 34px;
-    font-weight: 600;
-    line-height: 41px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    &.for__item_big {
-      grid-column: span 6;
-    }
+    &__item {
+      height: 415px;
+      grid-column: span 4;
+      color: $color-text;
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 41px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    &.for__item_1 {
-      background-image: url(img/ОТДЫХА.jpeg);
-    }
+      &-big {
+        grid-column: span 6;
+      }
 
-    &.for__item_2 {
-      background-image: url(img/РАБОТЫ.jpeg);
-    }
+      &-1 {
+        background-image: url(img/ОТДЫХА.jpeg);
+      }
 
-    &.for__item_3 {
-      background-image: url(img/КУХНИ.jpeg);
-    }
+      &-2 {
+        background-image: url(img/РАБОТЫ.jpeg);
+      }
 
-    &.for__item_4 {
-      background-image: url(img/ДЕТСКОЙ.jpeg);
-    }
+      &-3 {
+        background-image: url(img/КУХНИ.jpeg);
+      }
 
-    &.for__item_5 {
-      background-image: url(img/ВАННОЙ.jpeg);
+      &-4 {
+        background-image: url(img/ДЕТСКОЙ.jpeg);
+      }
+
+      &-5 {
+        background-image: url(img/ВАННОЙ.jpeg);
+      }
+
     }
   }
 }
@@ -214,14 +217,14 @@ body {
     color: #050505;
     font-weight: 500;
 
-    &_type-a {
+    &-a {
       font-size: 14px;
       line-height: 17px;
       color: #888888;
       margin-bottom: 12px;
     }
 
-    &_type-b {
+    &-b {
       font-size: 24px;
       line-height: 29px;
       text-decoration-line: line-through;
@@ -230,13 +233,13 @@ body {
   }
 }
 
-.link__box {
+.link-box {
   color: #737373;
   padding-bottom: 34px;
   margin-bottom: 33px;
   margin-top: 39px;
 
-  &_catalog {
+  &__catalog {
     color: #000000;
     font-size: 16px;
     line-height: 24px;
@@ -294,7 +297,7 @@ body {
     padding-right: 40px;
   }
 
-  &__nav {
+  &-nav {
     width: 136px;
     display: flex;
     flex-direction: column;
@@ -302,6 +305,24 @@ body {
     box-sizing: border-box;
     padding-left: 14px;
     padding-right: 63px;
+
+    &__title-menu {
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      font-weight: 500;
+    }
+
+    &__link-underline {
+      font-size: 14px;
+      line-height: 17px;
+      color: #888888;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__item {
@@ -333,24 +354,6 @@ body {
   }
 
 
-  &__title_menu {
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-    font-weight: 500;
-  }
-
-  &__link_underline {
-    font-size: 14px;
-    line-height: 17px;
-    color: #888888;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
   &__title {
     font-size: 24px;
     line-height: 29px;
@@ -366,7 +369,7 @@ body {
     text-decoration: none;
   }
 
-  &__form {
+  &-form {
     display: flex;
     flex-direction: column;
     width: 353px;
@@ -376,61 +379,57 @@ body {
     padding-left: 56px;
     padding-top: 17px;
     padding-bottom: 40px;
-  }
-}
 
-.form {
-  &__paragraph {
-    font-size: 12px;
-    line-height: 15px;
-    color: $color-text-2;
-    padding-right: 9px;
-  }
-
-  &__input {
-    width: 260px;
-    height: 40px;
-    outline: none;
-    border: 1px solid #C4C4C4;
-    background-color: $color-text;
-    box-sizing: border-box;
-    border-radius: 16px;
-    font-size: 12px;
-    line-height: 15px;
-    color: gray;
-    padding-left: 17px;
-    padding-right: 17px;
-
-    &::placeholder {
-      font-family: "Montserrat", sans-serif;
-      font-optical-sizing: auto;
-      color: gray;
+    &__paragraph {
       font-size: 12px;
       line-height: 15px;
+      color: $color-text-2;
+      padding-right: 9px;
+    }
+
+    &__input {
+      width: 260px;
+      height: 40px;
+      outline: none;
+      border: 1px solid #C4C4C4;
+      background-color: $color-text;
+      box-sizing: border-box;
+      border-radius: 16px;
+      font-size: 12px;
+      line-height: 15px;
+      color: gray;
+      padding-left: 17px;
+      padding-right: 17px;
+
+      &::placeholder {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        color: gray;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    &__button {
+      background: rgba(222, 215, 215, 0.41);
+      border: 1px solid rgba(222, 215, 215, 0.41);
+      box-sizing: border-box;
+      border-radius: 16px;
+      width: 260px;
+      height: 40px;
+      line-height: 18px;
+      color: #000000;
+      font: inherit;
+      font-size: 12px;
+      transition: background 0.2s ease, border 0.2s ease, color 0.2s ease;
+
+      &:hover {
+        background: rgba(0, 0, 0);
+        border: 1px solid rgba(0, 0, 0);
+        color: white;
+      }
     }
   }
-
-  &__button {
-    background: rgba(222, 215, 215, 0.41);
-    border: 1px solid rgba(222, 215, 215, 0.41);
-    box-sizing: border-box;
-    border-radius: 16px;
-    width: 260px;
-    height: 40px;
-    line-height: 18px;
-    color: #000000;
-    font: inherit;
-    font-size: 12px;
-    transition: background 0.2s ease, border 0.2s ease, color 0.2s ease;
-
-    &:hover {
-      background: rgba(0, 0, 0);
-      border: 1px solid rgba(0, 0, 0);
-      color: white;
-    }
-  }
-
-
 }
 
 .filtering-form-container {

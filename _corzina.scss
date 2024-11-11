@@ -14,7 +14,6 @@
     margin-bottom: 16px;
     width: 792px;
     font-weight: 600;
-
   }
 }
 
@@ -37,7 +36,7 @@
     align-items: flex-start;
   }
 
-  &__item-box_left {
+  &__item-box__left {
     display: flex;
     gap: 32px;
   }
@@ -68,7 +67,7 @@
   justify-content: space-between;
   padding-bottom: 14px;
 
-  &_text {
+  &__text {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
