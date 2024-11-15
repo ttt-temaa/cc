@@ -950,7 +950,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 353px;
-  align-items: flex-end;
+  padding-left: 56px;
   gap: 8px;
   box-sizing: border-box;
   padding-top: 17px;
