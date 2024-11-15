@@ -129,8 +129,10 @@ select {
   line-height: 70px;
   margin-top: 127px;
   margin-bottom: 16px;
-  width: 792px;
   font-weight: 600;
+  text-align: center;
+  font-size: 48px;
+  line-height: 59px;
 }
 
 .basket {
@@ -261,6 +263,7 @@ select {
   border-radius: 20px;
   background: rgb(247, 246, 246);
   height: 556px;
+  width: 376px;
   grid-column: span 4;
 }
 .basket-form__title {
@@ -1117,6 +1120,9 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .basket__picture {
+    display: none;
+  }
   .for__item_big {
     height: 244px;
   }

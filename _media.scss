@@ -98,6 +98,9 @@
   }
 }
 @media (max-width: 767px) {
+  .basket__picture{
+    display: none;
+  }
   .for__item_big {
     height: 244px;
   }

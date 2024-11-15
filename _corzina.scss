@@ -7,13 +7,15 @@
   background-repeat: no-repeat;
 
   &__title {
-    color: $color-text;
+    color: rgb(255, 255, 255);
     font-size: 64px;
     line-height: 70px;
     margin-top: 127px;
     margin-bottom: 16px;
-    width: 792px;
     font-weight: 600;
+    text-align: center;
+    font-size: 48px;
+    line-height: 59px;
   }
 }
 
@@ -165,6 +167,7 @@
   border-radius: 20px;
   background: rgb(247, 246, 246);
   height: 556px;
+  width: 376px;
   grid-column: span 4;
 
   &__title {
