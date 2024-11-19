@@ -1,7 +1,5 @@
 @import 'vars';
-@import 'catalog';
-@import 'corzina';
-@import 'filter-catalog';
+
 
 
 * {
@@ -448,4 +446,7 @@ body {
   position: relative;
 }
 
+@import 'catalog';
+@import 'corzina';
+@import 'filter-catalog';
 @import 'media';
