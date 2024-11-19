@@ -98,6 +98,26 @@
   }
 }
 @media (max-width: 767px) {
+  .basket-top {
+    height: 400px;
+    background-image: url(img/b.topback.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__title {
+      color: rgb(255, 255, 255);
+      font-size: 64px;
+      line-height: 70px;
+      margin-top: 127px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      text-align: center;
+      font-size: 48px;
+      line-height: 59px;
+    }
+  }
+
   .basket__picture{
     display: none;
   }
