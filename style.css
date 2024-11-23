@@ -827,6 +827,7 @@ select {
   align-self: flex-end;
   max-width: 190px;
   width: 100%;
+  color: #050505;
 }
 
 .radio {
