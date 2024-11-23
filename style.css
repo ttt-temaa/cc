@@ -807,8 +807,6 @@ select {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 32px 65px;
-  max-height: 548px;
-  min-width: 548px;
 }
 .filtering-form__fieldset {
   display: flex;
@@ -1043,6 +1041,28 @@ select {
   display: none;
 }
 
+@media (min-width: 835px) {
+  .filtering-form {
+    position: absolute;
+    top: calc(100% + 55px);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 42px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+    padding: 40px 48px;
+    right: 260px;
+  }
+  .filtering-form__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px 65px;
+    max-height: 548px;
+    min-width: 548px;
+  }
+}
 @media (max-width: 1024px) {
   .center {
     padding-left: 24px;
@@ -1091,6 +1111,14 @@ select {
     background-color: #fff;
     box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
     padding: 40px 48px;
+  }
+  .filter-form__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px 65px;
+    max-height: 548px;
+    min-width: 548px;
   }
   .filtering-form-container {
     display: none;
