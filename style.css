@@ -1185,6 +1185,12 @@ select {
     flex-wrap: wrap;
     gap: 32px 65px;
   }
+  .filtering-form__button {
+    align-self: center;
+    max-width: 190px;
+    width: 100%;
+    color: #000000;
+  }
   .basket-top {
     height: 400px;
     background: url(img/b.topback.jpeg) center/cover no-repeat;
