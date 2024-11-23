@@ -2,9 +2,17 @@
 .nav__icon {
   display: none;
 }
-
 .nav__text {
   display: inline;
+}
+.header__logo{
+  display: inline;
+}
+.header__icon-mini{
+  display: none;
+}
+.header__input-mini{
+  display: none;
 }
 
 // Media queries
@@ -151,7 +159,17 @@
   .basket__picture {
     display: none;
   }
-
+  .header__logo{
+    display: none;
+  }
+  .header__icon-mini{
+    display: inline;
+    margin-top: 8px;
+  }
+  .header__input-mini{
+    display: inline;
+    margin-top: 8px;
+  }
   // For section
   .for {
     grid-template-columns: repeat(4, 1fr);
