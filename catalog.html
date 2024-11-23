@@ -16,7 +16,7 @@
 <body>
 <div class="catalog-top center">
     <header class="header">
-        <a href="index.html"><img src="img/logo.svg" alt="Логотип магазина"></a>
+        <a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип магазина"></a>
         <label>
             <input class="header__input" type="text" placeholder="Поиск">
         </label>
@@ -72,8 +72,7 @@
 
     <div class="nav-filter">
 
-        <label for="Фильтрация"></label>
-        <select class="nav-filter__section nav-filter__block" id="Фильтрация">
+        <select class="nav-filter__section nav-filter__block" id="filtering">
             <option value="filter">Фильтрация</option>
             <option value="color">Цвет</option>
             <option value="data">Доставка</option>
@@ -81,14 +80,13 @@
             <option value="price">Цена</option>
         </select>
 
-        <label for="По-популярности"></label>
         <select class="nav-filter__section nav-filter__popular" id="По-популярности">
             <option value="popular">По популярности</option>
             <option value="minprice">Начать с низких цен</option>
             <option value="maxprice">Начать с высоких цен</option>
         </select>
 
-        <div class="filtering-form-container" style="display: none;">
+        <div class="filtering-form-container" style="display: none">
 
             <form class="filtering-form" action="#" method="get">
 
@@ -448,14 +446,12 @@
 </footer>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const toggleButton = document.getElementById("Фильтрация");
+        const toggleButton = document.getElementById("filtering");
         const filterContainer = document.querySelector(".filtering-form-container");
-
-        if (toggleButton && filterContainer) {
-            toggleButton.addEventListener("click", function () {
-                filterContainer.style.display = filterContainer.style.display === "none" ? "block" : "none";
-            });
-        }
+        toggleButton.addEventListener("click", function () {
+            filterContainer.classList.toggle('active')
+            filterContainer.style.display = filterContainer.style.display === "none" ? "block" : "none";
+        });
     });
 </script>
 </body>
