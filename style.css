@@ -1338,7 +1338,7 @@ select {
     height: 41px;
     border: 1px solid #000;
     border-radius: 20px;
-    background: #f7f6f6;
+    background: #ffffff;
     transition: background 0.3s, border 0.3s, color 0.3s;
   }
   .basket-form__button {
@@ -1409,6 +1409,22 @@ select {
   }
   .basket__content {
     grid-column: span 4;
+  }
+  .footer__info {
+    width: 375px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding-right: 40px;
+  }
+  .footer {
+    width: 340px;
+    margin-top: 0;
+  }
+  .footer__contents {
+    display: flex;
+    width: 353px;
   }
 }
 
