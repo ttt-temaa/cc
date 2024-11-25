@@ -1419,12 +1419,13 @@ select {
     padding-right: 40px;
   }
   .footer {
-    width: 100%;
+    display: block;
+    width: 94%;
     margin-top: 0;
   }
   .footer__contents {
     display: flex;
-    width: 100%;
+    width: 369px;
   }
 }
 
