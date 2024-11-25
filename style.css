@@ -1413,19 +1413,19 @@ select {
   .footer__info {
     width: 375px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
     padding-right: 40px;
   }
   .footer {
     display: block;
-    width: 94%;
+    width: 100%;
     margin-top: 0;
   }
   .footer__contents {
     display: flex;
-    width: 369px;
+    width: 100%;
   }
 }
 
